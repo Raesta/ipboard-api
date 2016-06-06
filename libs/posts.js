@@ -23,7 +23,7 @@ Posts.prototype.update = function(id, callback) {
 }
 
 Posts.prototype.delete = function(id, callback) {
-  utils.request('DELETE', this.options.apiUrl + 'forums/topics/' + id, this.options.apiKey, function(data) {
+  utils.request('DELETE', this.options.apiUrl + 'forums/posts/' + id, this.options.apiKey, function(data) {
     return callback(data);
   });
 }
