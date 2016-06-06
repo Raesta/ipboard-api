@@ -16,4 +16,16 @@ Topics.prototype.getOne = function(id, callback) {
   });
 }
 
+Topics.prototype.create = function(callback) {
+}
+
+Topics.prototype.update = function(id, callback) {
+}
+
+Topics.prototype.delete = function(id, callback) {
+  utils.request('DELETE', this.options.apiUrl + 'forums/topics/' + id, this.options.apiKey, function(data) {
+    return callback(data);
+  });
+}
+
 module.exports = Topics;

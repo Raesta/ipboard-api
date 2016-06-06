@@ -19,7 +19,13 @@ Members.prototype.getOne = function(id, callback) {
 Members.prototype.create = function() {
 }
 
-Members.prototype.update = function() {
+Members.prototype.update = function(id, callback) {
+}
+
+Members.prototype.delete = function(id, callback) {
+  utils.request('DELETE', this.options.apiUrl + 'core/members/' + id, this.options.apiKey, function(data) {
+    return callback(data);
+  });
 }
 
 module.exports = Members;
