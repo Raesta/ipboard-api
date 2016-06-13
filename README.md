@@ -1,6 +1,10 @@
 ipboard-api
 ======
 
+[![NPM](https://nodei.co/npm/ipboard-api.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/ipboard-api/)
+
+[![npm version](https://badge.fury.io/js/ipboard-api.svg)](https://badge.fury.io/js/ipboard-api)
+
 Node package for interact with your [Ipboard](https://invisionpower.com/4guides/developing-plugins-and-applications/rest-api/) Community.
 ---
 
@@ -8,7 +12,7 @@ Node package for interact with your [Ipboard](https://invisionpower.com/4guides/
 ```javascript
 $ npm install ipboard-api
 ```
-
+or
 ```javascript
 $ npm install git://github.com/Raesta/ipboard-api.git
 ```
@@ -23,6 +27,9 @@ ipboard.members.getAll(function(result) {
   console.log(result);
 });
 ```
+
+### help
+if you need more information, refer to the wiki [Wiki](https://github.com/Raesta/ipboard-api/wiki)
 
 ### Todo
 - improve error system
