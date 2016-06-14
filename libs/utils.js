@@ -11,7 +11,8 @@ module.exports = {
     if (data) options.form = data;
 
     request(options, function (error, response, body) {
-      return callback(JSON.parse(body));
+      if (error) return callback(error);
+      else return callback(JSON.parse(body));
     });
   }
 
