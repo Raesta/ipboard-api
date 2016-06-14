@@ -12,6 +12,7 @@ function Ipboard(apiUrl, apiKey) {
   this.options.apiUrl = apiUrl;
   this.options.apiKey = new Buffer(apiKey).toString('base64');
 
+  this.native = require('./libs/utils');
   this.core = new Core(this.options);
   this.members = new Members(this.options);
   this.topics = new Topics(this.options);
