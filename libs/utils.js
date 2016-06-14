@@ -3,6 +3,10 @@ var request = require('request');
 module.exports = {
 
   request: function(method, apiUrl, apiKey, data, callback) {
+    if (!method) throw new Error('method is a required argument');
+    if (!apiUrl) throw new Error('the url of a api is a required argument');
+    if (!apiKey) throw new Error('the key of a api is a required argument');
+
     var options = {};
     options.method = method;
     options.url = apiUrl;
