@@ -23,7 +23,11 @@ var Ipboard = require('ipboard-api');
 
 var ipboard = new Ipboard('YOURAPIURL', 'YOURAPIKEY');
 
-ipboard.members.getAll(function(result) {
+ipboard.members.getAll(null, function(result) {
+  console.log(result);
+});
+
+ipboard.members.getAll({ page: 2 }, function(result) {
   console.log(result);
 });
 ```
