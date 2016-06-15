@@ -28,8 +28,8 @@ ipboard.members.getAll(function(result) {
 });
 ```
 
-### help
-if you need more information, refer to the wiki [Wiki](https://github.com/Raesta/ipboard-api/wiki)
+### Help
+if you need more information, refer to the [Wiki](https://github.com/Raesta/ipboard-api/wiki)
 
 ### Todo
 - improve error system
