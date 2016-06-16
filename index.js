@@ -1,7 +1,5 @@
 var Core = require('./libs/core');
-var Members = require('./libs/members');
-var Topics = require('./libs/topics');
-var Posts = require('./libs/posts');
+var Forums = require('./libs/forums');
 
 module.exports = Ipboard;
 
@@ -14,7 +12,5 @@ function Ipboard(apiUrl, apiKey) {
 
   this.native = require('./libs/utils');
   this.core = new Core(this.options);
-  this.members = new Members(this.options);
-  this.topics = new Topics(this.options);
-  this.posts = new Posts(this.options);
+  this.forums = new Forums(this.options);
 }

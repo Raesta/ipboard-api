@@ -1,4 +1,4 @@
-var utils = require('./utils');
+var utils = require('../utils');
 
 function Members(options) {
   this.options = options;
