@@ -19,15 +19,15 @@ $ npm install git://github.com/Raesta/ipboard-api.git
 
 ### Example
 ```javascript
-var Ipboard = require('ipboard-api');
+var IpboardAPI = require('ipboard-api');
 
-var ipboard = new Ipboard('YOURAPIURL', 'YOURAPIKEY');
+var Ipboard = new IpboardAPI('YOURAPIURL', 'YOURAPIKEY');
 
-ipboard.members.getAll(null, function(result) {
+Ipboard.members.getAll(null, function(result) {
   console.log(result);
 });
 
-ipboard.members.getAll({ page: 2 }, function(result) {
+Ipboard.members.getAll({ page: 2 }, function(result) {
   console.log(result);
 });
 ```
